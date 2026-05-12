@@ -1,0 +1,1 @@
+system.cpu.numCycles                           488970                       # Number of cpu cycles simulated (Cycle)

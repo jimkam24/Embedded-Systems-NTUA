@@ -1,0 +1,10 @@
+1) L1I (KB) = 4 L1D (KB) = 16 L2 (KB) = 128 UF = 16 config. results in Execution Time (CC) = 42472280 and Total Memory (KB) = 148
+2) L1I (KB) = 16 L1D (KB) = 32 L2 (KB) = 128 UF = 8 config. results in Execution Time (CC) = 42180765 and Total Memory (KB) = 176
+3) L1I (KB) = 4 L1D (KB) = 4 L2 (KB) = 128 UF = 8 config. results in Execution Time (CC) = 59567374 and Total Memory (KB) = 136
+4) L1I (KB) = 32 L1D (KB) = 32 L2 (KB) = 256 UF = 32 config. results in Execution Time (CC) = 41896021 and Total Memory (KB) = 320
+5) L1I (KB) = 32 L1D (KB) = 32 L2 (KB) = 128 UF = 32 config. results in Execution Time (CC) = 41898540 and Total Memory (KB) = 192
+6) L1I (KB) = 32 L1D (KB) = 32 L2 (KB) = 512 UF = 32 config. results in Execution Time (CC) = 41895278 and Total Memory (KB) = 576
+7) L1I (KB) = 4 L1D (KB) = 8 L2 (KB) = 128 UF = 16 config. results in Execution Time (CC) = 59386648 and Total Memory (KB) = 140
+
+Total number of evaluations: 29
+

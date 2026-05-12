@@ -1,0 +1,1446 @@
+--------------------------------------------------------------------------------
+Command:            ./drr
+Massif arguments:   (none)
+ms_print arguments: massif.out.8864
+--------------------------------------------------------------------------------
+
+
+    MB
+1.075^                                                                       #
+     |                                                                       #
+     |                                                                      @#
+     |                                                                     @@#
+     |                                                                 @:::@@#
+     |                                                            @::::@:::@@#
+     |                                   ::@:::@:::@:::@@:::::::@:@::::@:::@@#
+     |                                  :: @ ::@: :@:::@ :: :: :@:@::::@:::@@#
+     |                                @@:: @ ::@: :@:::@ :: :: :@:@::::@:::@@#
+     |                                @ :: @ ::@: :@:::@ :: :: :@:@::::@:::@@#
+     |                               @@ :: @ ::@: :@:::@ :: :: :@:@::::@:::@@#
+     |                          @ @@:@@ :: @ ::@: :@:::@ :: :: :@:@::::@:::@@#
+     |                          @:@ :@@ :: @ ::@: :@:::@ :: :: :@:@::::@:::@@#
+     |                      @::@@:@ :@@ :: @ ::@: :@:::@ :: :: :@:@::::@:::@@#
+     |                  ::::@::@@:@ :@@ :: @ ::@: :@:::@ :: :: :@:@::::@:::@@#
+     |                 :::::@::@@:@ :@@ :: @ ::@: :@:::@ :: :: :@:@::::@:::@@#
+     |            @:@@@:::::@::@@:@ :@@ :: @ ::@: :@:::@ :: :: :@:@::::@:::@@#
+     |            @:@@ :::::@::@@:@ :@@ :: @ ::@: :@:::@ :: :: :@:@::::@:::@@#
+     |     @@:@@@@@:@@ :::::@::@@:@ :@@ :: @ ::@: :@:::@ :: :: :@:@::::@:::@@#
+     | :@::@ :@@ @@:@@ :::::@::@@:@ :@@ :: @ ::@: :@:::@ :: :: :@:@::::@:::@@#
+   0 +----------------------------------------------------------------------->Mi
+     0                                                                   286.5
+
+Number of snapshots: 92
+ Detailed snapshots: [2, 5, 7, 8, 9, 10, 11, 13, 14, 20, 23, 24, 26, 28, 29, 32, 36, 40, 44, 50, 54, 62, 63, 64, 65, 66, 67, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 86, 87, 88, 89, 90, 91 (peak)]
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+  0              0                0                0             0            0
+  1      6,622,247          111,568           79,792        31,776            0
+  2     10,702,247          108,496           78,256        30,240            0
+72.13% (78,256B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->33.27% (36,096B) 0x401873: cdsl_dyn_array_enqueue (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->33.27% (36,096B) 0x401521: insert_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+|   ->33.27% (36,096B) 0x40123B: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+|     
+->21.99% (23,856B) 0x401350: get_next_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->21.99% (23,856B) 0x40120D: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+|   
+->12.00% (13,024B) 0x401707: cdsl_dyn_array_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->11.92% (12,936B) 0x40146C: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| | ->11.92% (12,936B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| |   
+| ->00.08% (88B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->03.25% (3,528B) 0x401433: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->03.25% (3,528B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+|   
+->01.59% (1,728B) 0x401736: cdsl_dyn_array_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->01.56% (1,696B) 0x40146C: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| | ->01.56% (1,696B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| |   
+| ->00.03% (32B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->00.02% (24B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+  3     14,159,655          105,408           76,720        28,688            0
+  4     18,108,971          100,880           74,464        26,416            0
+  5     24,343,335          164,968          123,784        41,184            0
+75.04% (123,784B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->42.17% (69,568B) 0x401873: cdsl_dyn_array_enqueue (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->42.17% (69,568B) 0x401521: insert_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+|   ->42.17% (69,568B) 0x40123B: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+|     
+->20.70% (34,152B) 0x401350: get_next_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->20.70% (34,152B) 0x40120D: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+|   
+->08.64% (14,256B) 0x401707: cdsl_dyn_array_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->08.59% (14,168B) 0x40146C: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| | ->08.59% (14,168B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| |   
+| ->00.05% (88B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->02.34% (3,864B) 0x401433: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->02.34% (3,864B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+|   
+->01.16% (1,920B) 0x401736: cdsl_dyn_array_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->01.14% (1,888B) 0x40146C: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| | ->01.14% (1,888B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| |   
+| ->00.02% (32B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->00.01% (24B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+  6     29,776,215          163,384          118,892        44,492            0
+  7     34,508,373          159,512          116,972        42,540            0
+73.33% (116,972B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->38.48% (61,376B) 0x401873: cdsl_dyn_array_enqueue (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->38.48% (61,376B) 0x401521: insert_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+|   ->38.48% (61,376B) 0x40123B: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+|     
+->22.28% (35,532B) 0x401350: get_next_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->22.28% (35,532B) 0x40120D: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+|   
+->08.94% (14,256B) 0x401707: cdsl_dyn_array_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->08.88% (14,168B) 0x40146C: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| | ->08.88% (14,168B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| |   
+| ->00.06% (88B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->02.42% (3,864B) 0x401433: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->02.42% (3,864B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+|   
+->01.20% (1,920B) 0x401736: cdsl_dyn_array_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->01.18% (1,888B) 0x40146C: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| | ->01.18% (1,888B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| |   
+| ->00.02% (32B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->00.02% (24B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+  8     37,834,265          156,368          115,400        40,968            0
+73.80% (115,400B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->39.25% (61,376B) 0x401873: cdsl_dyn_array_enqueue (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->39.25% (61,376B) 0x401521: insert_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+|   ->39.25% (61,376B) 0x40123B: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+|     
+->21.72% (33,960B) 0x401350: get_next_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->21.72% (33,960B) 0x40120D: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+|   
+->09.12% (14,256B) 0x401707: cdsl_dyn_array_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->09.06% (14,168B) 0x40146C: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| | ->09.06% (14,168B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| |   
+| ->00.06% (88B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->02.47% (3,864B) 0x401433: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->02.47% (3,864B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+|   
+->01.23% (1,920B) 0x401736: cdsl_dyn_array_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->01.21% (1,888B) 0x40146C: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| | ->01.21% (1,888B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| |   
+| ->00.02% (32B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->00.02% (24B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+  9     41,579,161          151,664          113,048        38,616            0
+74.54% (113,048B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->40.47% (61,376B) 0x401873: cdsl_dyn_array_enqueue (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->40.47% (61,376B) 0x401521: insert_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+|   ->40.47% (61,376B) 0x40123B: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+|     
+->20.84% (31,608B) 0x401350: get_next_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->20.84% (31,608B) 0x40120D: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+|   
+->09.40% (14,256B) 0x401707: cdsl_dyn_array_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->09.34% (14,168B) 0x40146C: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| | ->09.34% (14,168B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| |   
+| ->00.06% (88B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->02.55% (3,864B) 0x401433: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->02.55% (3,864B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+|   
+->01.27% (1,920B) 0x401736: cdsl_dyn_array_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->01.24% (1,888B) 0x40146C: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| | ->01.24% (1,888B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| |   
+| ->00.02% (32B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->00.02% (24B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 10     45,902,036          144,184          109,504        34,680            0
+75.95% (109,504B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->42.70% (61,568B) 0x401873: cdsl_dyn_array_enqueue (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->42.70% (61,568B) 0x401521: insert_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+|   ->42.70% (61,568B) 0x40123B: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+|     
+->19.08% (27,504B) 0x401350: get_next_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->19.08% (27,504B) 0x40120D: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+|   
+->10.07% (14,520B) 0x401707: cdsl_dyn_array_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->10.01% (14,432B) 0x40146C: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| | ->10.01% (14,432B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| |   
+| ->00.06% (88B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->02.73% (3,936B) 0x401433: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->02.73% (3,936B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+|   
+->01.35% (1,952B) 0x401736: cdsl_dyn_array_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->01.33% (1,920B) 0x40146C: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| | ->01.33% (1,920B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| |   
+| ->00.02% (32B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->00.02% (24B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 11     52,419,934          233,256          181,364        51,892            0
+77.75% (181,364B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->43.60% (101,696B) 0x401873: cdsl_dyn_array_enqueue (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->43.60% (101,696B) 0x401521: insert_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+|   ->43.60% (101,696B) 0x40123B: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+|     
+->16.00% (37,332B) 0x401350: get_next_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->16.00% (37,332B) 0x40120D: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+|   
+->12.98% (30,272B) 0x401707: cdsl_dyn_array_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->12.94% (30,184B) 0x40146C: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| | ->12.94% (30,184B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| |   
+| ->00.04% (88B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->03.53% (8,232B) 0x401433: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->03.53% (8,232B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+|   
+->01.63% (3,808B) 0x401736: cdsl_dyn_array_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->01.62% (3,776B) 0x40146C: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| | ->01.62% (3,776B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| |   
+| ->00.01% (32B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->00.01% (24B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 12     56,425,913          227,584          178,628        48,956            0
+ 13     60,941,135          247,104          196,140        50,964            0
+79.38% (196,140B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->46.44% (114,752B) 0x401873: cdsl_dyn_array_enqueue (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->46.44% (114,752B) 0x401521: insert_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+|   ->46.44% (114,752B) 0x40123B: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+|     
+->14.15% (34,956B) 0x401350: get_next_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->14.15% (34,956B) 0x40120D: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+|   
+->13.39% (33,088B) 0x401707: cdsl_dyn_array_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->13.35% (33,000B) 0x40146C: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| | ->13.35% (33,000B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| |   
+| ->00.04% (88B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->03.64% (9,000B) 0x401433: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->03.64% (9,000B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+|   
+->01.75% (4,320B) 0x401736: cdsl_dyn_array_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->01.74% (4,288B) 0x40146C: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| | ->01.74% (4,288B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| |   
+| ->00.01% (32B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->00.01% (24B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 14     66,332,409          273,112          217,976        55,136            0
+79.81% (217,976B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->47.34% (129,280B) 0x401873: cdsl_dyn_array_enqueue (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->47.34% (129,280B) 0x401521: insert_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+|   ->47.34% (129,280B) 0x40123B: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+|     
+->13.74% (37,512B) 0x401350: get_next_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->13.74% (37,512B) 0x40120D: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+|   
+->13.37% (36,520B) 0x401707: cdsl_dyn_array_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->13.34% (36,432B) 0x40146C: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| | ->13.34% (36,432B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| |   
+| ->00.03% (88B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->03.64% (9,936B) 0x401433: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->03.64% (9,936B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+|   
+->01.72% (4,704B) 0x401736: cdsl_dyn_array_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->01.71% (4,672B) 0x40146C: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| | ->01.71% (4,672B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| |   
+| ->00.01% (32B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->00.01% (24B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 15     72,528,391          310,904          249,264        61,640            0
+ 16     76,650,928          382,488          299,224        83,264            0
+ 17     81,731,976          378,536          297,256        81,280            0
+ 18     85,769,323          374,608          295,300        79,308            0
+ 19     90,836,209          366,760          291,376        75,384            0
+ 20     94,365,766          403,584          320,808        82,776            0
+79.49% (320,808B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->48.38% (195,264B) 0x401873: cdsl_dyn_array_enqueue (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->48.38% (195,264B) 0x401521: insert_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+|   ->48.38% (195,264B) 0x40123B: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+|     
+->14.99% (60,504B) 0x401350: get_next_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->14.99% (60,504B) 0x40120D: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+|   
+->11.45% (46,200B) 0x401707: cdsl_dyn_array_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->11.43% (46,112B) 0x40146C: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| | ->11.43% (46,112B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| |   
+| ->00.02% (88B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->03.12% (12,576B) 0x401433: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->03.12% (12,576B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+|   
+->01.55% (6,240B) 0x401736: cdsl_dyn_array_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->01.54% (6,208B) 0x40146C: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| | ->01.54% (6,208B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| |   
+| ->00.01% (32B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->00.01% (24B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 21     99,417,886          395,664          314,828        80,836            0
+ 22    103,874,538          405,048          325,068        79,980            0
+ 23    106,762,815          443,040          355,644        87,396            0
+80.27% (355,644B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->49.84% (220,800B) 0x401873: cdsl_dyn_array_enqueue (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->49.84% (220,800B) 0x401521: insert_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+|   ->49.84% (220,800B) 0x40123B: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+|     
+->14.05% (62,268B) 0x401350: get_next_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->14.05% (62,268B) 0x40120D: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+|   
+->11.68% (51,744B) 0x401707: cdsl_dyn_array_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->11.66% (51,656B) 0x40146C: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| | ->11.66% (51,656B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| |   
+| ->00.02% (88B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->03.18% (14,088B) 0x401433: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->03.18% (14,088B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+|   
+->01.52% (6,720B) 0x401736: cdsl_dyn_array_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->01.51% (6,688B) 0x40146C: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| | ->01.51% (6,688B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| |   
+| ->00.01% (32B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->00.01% (24B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 24    110,957,139          510,136          407,332       102,804            0
+79.85% (407,332B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->49.40% (252,032B) 0x401873: cdsl_dyn_array_enqueue (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->49.40% (252,032B) 0x401521: insert_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+|   ->49.40% (252,032B) 0x40123B: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+|     
+->14.66% (74,772B) 0x401350: get_next_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->14.66% (74,772B) 0x40120D: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+|   
+->11.30% (57,640B) 0x401707: cdsl_dyn_array_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->11.28% (57,552B) 0x40146C: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| | ->11.28% (57,552B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| |   
+| ->00.02% (88B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->03.08% (15,696B) 0x401433: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->03.08% (15,696B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+|   
+->01.41% (7,168B) 0x401736: cdsl_dyn_array_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->01.40% (7,136B) 0x40146C: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| | ->01.40% (7,136B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| |   
+| ->00.01% (32B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->00.00% (24B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 25    115,726,391          505,080          402,792       102,288            0
+ 26    120,046,747          530,016          421,456       108,560            0
+79.52% (421,456B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->49.10% (260,224B) 0x401873: cdsl_dyn_array_enqueue (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->49.10% (260,224B) 0x401521: insert_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+|   ->49.10% (260,224B) 0x40123B: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+|     
+->15.18% (80,448B) 0x401350: get_next_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->15.18% (80,448B) 0x40120D: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+|   
+->10.91% (57,816B) 0x401707: cdsl_dyn_array_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->10.89% (57,728B) 0x40146C: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| | ->10.89% (57,728B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| |   
+| ->00.02% (88B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->02.97% (15,744B) 0x401433: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->02.97% (15,744B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+|   
+->01.36% (7,200B) 0x401736: cdsl_dyn_array_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->01.35% (7,168B) 0x40146C: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| | ->01.35% (7,168B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| |   
+| ->00.01% (32B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->00.00% (24B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 27    126,883,039          523,224          416,040       107,184            0
+ 28    133,044,460          597,888          479,132       118,756            0
+80.14% (479,132B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->48.54% (290,240B) 0x401873: cdsl_dyn_array_enqueue (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->48.54% (290,240B) 0x401521: insert_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+|   ->48.54% (290,240B) 0x40123B: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+|     
+->13.71% (81,948B) 0x401350: get_next_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->13.71% (81,948B) 0x40120D: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+|   
+->12.75% (76,208B) 0x401707: cdsl_dyn_array_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->12.73% (76,120B) 0x40146C: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| | ->12.73% (76,120B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| |   
+| ->00.01% (88B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->03.47% (20,760B) 0x401433: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->03.47% (20,760B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+|   
+->01.66% (9,952B) 0x401736: cdsl_dyn_array_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->01.66% (9,920B) 0x40146C: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| | ->01.66% (9,920B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| |   
+| ->00.01% (32B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->00.00% (24B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 29    137,030,997          703,840          555,924       147,916            0
+78.98% (555,924B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->47.58% (334,912B) 0x401873: cdsl_dyn_array_enqueue (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->47.58% (334,912B) 0x401521: insert_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+|   ->47.58% (334,912B) 0x40123B: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+|     
+->15.56% (109,524B) 0x401350: get_next_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->15.56% (109,524B) 0x40120D: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+|   
+->11.30% (79,552B) 0x401707: cdsl_dyn_array_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->11.29% (79,464B) 0x40146C: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| | ->11.29% (79,464B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| |   
+| ->00.01% (88B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->03.08% (21,672B) 0x401433: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->03.08% (21,672B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+|   
+->01.45% (10,240B) 0x401736: cdsl_dyn_array_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->01.45% (10,208B) 0x40146C: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| | ->01.45% (10,208B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| |   
+| ->00.00% (32B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->00.00% (24B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 30    143,254,148          748,544          578,284       170,260            0
+ 31    147,777,889          799,944          616,300       183,644            0
+ 32    154,667,260          835,872          638,352       197,520            0
+76.37% (638,352B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->44.00% (367,744B) 0x401873: cdsl_dyn_array_enqueue (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->43.99% (367,680B) 0x401521: insert_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| | ->43.99% (367,680B) 0x40123B: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| |   
+| ->00.01% (64B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->19.01% (158,928B) 0x401350: get_next_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->19.01% (158,928B) 0x40120D: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+|   
+->09.54% (79,728B) 0x401707: cdsl_dyn_array_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->09.53% (79,640B) 0x40146C: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| | ->09.53% (79,640B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| |   
+| ->00.01% (88B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->02.60% (21,720B) 0x401433: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->02.60% (21,720B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+|   
+->01.22% (10,208B) 0x401736: cdsl_dyn_array_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->01.22% (10,208B) 0x40146C: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| | ->01.22% (10,208B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| |   
+| ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->00.00% (24B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 33    158,159,348          835,104          637,968       197,136            0
+ 34    163,422,356          833,952          637,392       196,560            0
+ 35    168,614,396          832,776          636,804       195,972            0
+ 36    172,109,800          831,960          636,396       195,564            0
+76.49% (636,396B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->44.20% (367,744B) 0x401873: cdsl_dyn_array_enqueue (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->44.19% (367,680B) 0x401521: insert_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| | ->44.19% (367,680B) 0x40123B: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| |   
+| ->00.01% (64B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->18.87% (156,972B) 0x401350: get_next_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->18.87% (156,972B) 0x40120D: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+|   
+->09.58% (79,728B) 0x401707: cdsl_dyn_array_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->09.57% (79,640B) 0x40146C: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| | ->09.57% (79,640B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| |   
+| ->00.01% (88B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->02.61% (21,720B) 0x401433: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->02.61% (21,720B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+|   
+->01.23% (10,208B) 0x401736: cdsl_dyn_array_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->01.23% (10,208B) 0x40146C: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| | ->01.23% (10,208B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| |   
+| ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->00.00% (24B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 37    175,517,348          831,144          635,988       195,156            0
+ 38    179,029,580          830,264          635,556       194,708            0
+ 39    184,205,300          828,944          634,896       194,048            0
+ 40    189,414,280          827,552          634,200       193,352            0
+76.64% (634,200B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->44.44% (367,744B) 0x401873: cdsl_dyn_array_enqueue (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->44.43% (367,680B) 0x401521: insert_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| | ->44.43% (367,680B) 0x40123B: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| |   
+| ->00.01% (64B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->18.70% (154,776B) 0x401350: get_next_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->18.70% (154,776B) 0x40120D: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+|   
+->09.63% (79,728B) 0x401707: cdsl_dyn_array_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->09.62% (79,640B) 0x40146C: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| | ->09.62% (79,640B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| |   
+| ->00.01% (88B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->02.62% (21,720B) 0x401433: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->02.62% (21,720B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+|   
+->01.23% (10,208B) 0x401736: cdsl_dyn_array_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->01.23% (10,208B) 0x40146C: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| | ->01.23% (10,208B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| |   
+| ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->00.00% (24B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 41    192,859,046          826,640          633,744       192,896            0
+ 42    198,039,635          825,152          633,000       192,152            0
+ 43    201,478,807          824,096          632,472       191,624            0
+ 44    206,646,977          822,416          631,632       190,784            0
+76.80% (631,632B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->44.72% (367,744B) 0x401873: cdsl_dyn_array_enqueue (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->44.71% (367,680B) 0x401521: insert_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| | ->44.71% (367,680B) 0x40123B: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| |   
+| ->00.01% (64B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->18.51% (152,208B) 0x401350: get_next_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->18.51% (152,208B) 0x40120D: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+|   
+->09.69% (79,728B) 0x401707: cdsl_dyn_array_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->09.68% (79,640B) 0x40146C: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| | ->09.68% (79,640B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| |   
+| ->00.01% (88B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->02.64% (21,720B) 0x401433: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->02.64% (21,720B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+|   
+->01.24% (10,208B) 0x401736: cdsl_dyn_array_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->01.24% (10,208B) 0x40146C: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| | ->01.24% (10,208B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| |   
+| ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->00.00% (24B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 45    213,521,802          820,136          630,492       189,644            0
+ 46    220,327,732          817,376          629,112       188,264            0
+ 47    225,473,529          815,120          627,984       187,136            0
+ 48    232,356,935          811,600          626,232       185,368            0
+ 49    239,118,140          806,832          623,856       182,976            0
+ 50    242,022,924          804,408          622,712       181,696            0
+77.41% (622,712B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->45.72% (367,808B) 0x401873: cdsl_dyn_array_enqueue (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->45.72% (367,744B) 0x401521: insert_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| | ->45.72% (367,744B) 0x40123B: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| |   
+| ->00.01% (64B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->17.79% (143,112B) 0x401350: get_next_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->17.79% (143,112B) 0x40120D: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+|   
+->09.92% (79,816B) 0x401707: cdsl_dyn_array_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->09.91% (79,728B) 0x40146C: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| | ->09.91% (79,728B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| |   
+| ->00.01% (88B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->02.70% (21,744B) 0x401433: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->02.70% (21,744B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+|   
+->01.27% (10,208B) 0x401736: cdsl_dyn_array_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->01.27% (10,208B) 0x40146C: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| | ->01.27% (10,208B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| |   
+| ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->00.00% (24B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 51    244,923,168          800,376          620,696       179,680            0
+ 52    247,814,093          791,664          616,340       175,324            0
+ 53    250,707,255          830,904          645,668       185,236            0
+ 54    252,419,009          862,320          669,564       192,756            0
+77.65% (669,564B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->46.47% (400,704B) 0x401873: cdsl_dyn_array_enqueue (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->46.46% (400,640B) 0x401521: insert_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| | ->46.46% (400,640B) 0x40123B: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| |   
+| ->00.01% (64B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->17.71% (152,700B) 0x401350: get_next_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->17.71% (152,700B) 0x40120D: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+|   
+->09.61% (82,896B) 0x401707: cdsl_dyn_array_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->09.60% (82,808B) 0x40146C: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| | ->09.60% (82,808B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| |   
+| ->00.01% (88B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->02.62% (22,584B) 0x401433: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->02.62% (22,584B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+|   
+->01.24% (10,656B) 0x401736: cdsl_dyn_array_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->01.24% (10,656B) 0x40146C: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| | ->01.24% (10,656B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| |   
+| ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->00.00% (24B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 55    255,319,622          869,272          670,988       198,284            0
+ 56    258,231,927          867,288          670,004       197,284            0
+ 57    261,137,840          864,968          668,852       196,116            0
+ 58    264,038,331          862,064          667,400       194,664            0
+ 59    266,941,016          858,344          665,540       192,804            0
+ 60    269,833,773          852,008          662,372       189,636            0
+ 61    272,722,241          866,664          675,260       191,404            0
+ 62    273,230,325          872,944          680,580       192,364            0
+77.96% (680,580B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->47.02% (410,496B) 0x401873: cdsl_dyn_array_enqueue (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->47.02% (410,432B) 0x401521: insert_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| | ->47.02% (410,432B) 0x40123B: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| |   
+| ->00.01% (64B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->17.32% (151,236B) 0x401350: get_next_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->17.32% (151,236B) 0x40120D: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+|   
+->09.72% (84,832B) 0x401707: cdsl_dyn_array_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->09.71% (84,744B) 0x40146C: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| | ->09.71% (84,744B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| |   
+| ->00.01% (88B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->02.65% (23,112B) 0x401433: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->02.65% (23,112B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+|   
+->01.25% (10,880B) 0x401736: cdsl_dyn_array_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->01.25% (10,880B) 0x40146C: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| | ->01.25% (10,880B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| |   
+| ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->00.00% (24B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 63    274,522,175          881,720          687,156       194,564            0
+77.93% (687,156B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->46.94% (413,888B) 0x401873: cdsl_dyn_array_enqueue (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->46.93% (413,824B) 0x401521: insert_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| | ->46.93% (413,824B) 0x40123B: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| |   
+| ->00.01% (64B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->17.33% (152,820B) 0x401350: get_next_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->17.33% (152,820B) 0x40120D: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+|   
+->09.76% (86,064B) 0x401707: cdsl_dyn_array_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->09.75% (85,976B) 0x40146C: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| | ->09.75% (85,976B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| |   
+| ->00.01% (88B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->02.66% (23,448B) 0x401433: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->02.66% (23,448B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+|   
+->01.24% (10,912B) 0x401736: cdsl_dyn_array_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->01.24% (10,912B) 0x40146C: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| | ->01.24% (10,912B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| |   
+| ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->00.00% (24B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 64    274,644,410          890,696          694,204       196,492            0
+77.94% (694,204B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->46.93% (417,984B) 0x401873: cdsl_dyn_array_enqueue (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->46.92% (417,920B) 0x401521: insert_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| | ->46.92% (417,920B) 0x40123B: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| |   
+| ->00.01% (64B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->17.31% (154,188B) 0x401350: get_next_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->17.31% (154,188B) 0x40120D: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+|   
+->09.79% (87,208B) 0x401707: cdsl_dyn_array_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->09.78% (87,120B) 0x40146C: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| | ->09.78% (87,120B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| |   
+| ->00.01% (88B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->02.67% (23,760B) 0x401433: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->02.67% (23,760B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+|   
+->01.24% (11,040B) 0x401736: cdsl_dyn_array_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->01.24% (11,040B) 0x40146C: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| | ->01.24% (11,040B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| |   
+| ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->00.00% (24B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 65    274,773,632          909,144          708,028       201,116            0
+77.88% (708,028B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->46.99% (427,200B) 0x401873: cdsl_dyn_array_enqueue (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->46.98% (427,136B) 0x401521: insert_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| | ->46.98% (427,136B) 0x40123B: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| |   
+| ->00.01% (64B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->17.47% (158,796B) 0x401350: get_next_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->17.47% (158,796B) 0x40120D: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+|   
+->09.59% (87,208B) 0x401707: cdsl_dyn_array_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->09.58% (87,120B) 0x40146C: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| | ->09.58% (87,120B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| |   
+| ->00.01% (88B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->02.61% (23,760B) 0x401433: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->02.61% (23,760B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+|   
+->01.21% (11,040B) 0x401736: cdsl_dyn_array_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->01.21% (11,040B) 0x40146C: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| | ->01.21% (11,040B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| |   
+| ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->00.00% (24B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 66    275,184,443          919,848          714,424       205,424            0
+77.67% (714,424B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->46.67% (429,248B) 0x401873: cdsl_dyn_array_enqueue (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->46.66% (429,184B) 0x401521: insert_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| | ->46.66% (429,184B) 0x40123B: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| |   
+| ->00.01% (64B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->17.72% (163,032B) 0x401350: get_next_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->17.72% (163,032B) 0x40120D: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+|   
+->09.49% (87,296B) 0x401707: cdsl_dyn_array_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->09.48% (87,208B) 0x40146C: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| | ->09.48% (87,208B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| |   
+| ->00.01% (88B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->02.59% (23,784B) 0x401433: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->02.59% (23,784B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+|   
+->01.20% (11,040B) 0x401736: cdsl_dyn_array_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->01.20% (11,040B) 0x40146C: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| | ->01.20% (11,040B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| |   
+| ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->00.00% (24B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 67    275,270,558          932,152          723,640       208,512            0
+77.63% (723,640B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->46.71% (435,392B) 0x401873: cdsl_dyn_array_enqueue (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->46.70% (435,328B) 0x401521: insert_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| | ->46.70% (435,328B) 0x40123B: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| |   
+| ->00.01% (64B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->17.82% (166,104B) 0x401350: get_next_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->17.82% (166,104B) 0x40120D: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+|   
+->09.36% (87,296B) 0x401707: cdsl_dyn_array_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->09.36% (87,208B) 0x40146C: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| | ->09.36% (87,208B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| |   
+| ->00.01% (88B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->02.55% (23,784B) 0x401433: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->02.55% (23,784B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+|   
+->01.18% (11,040B) 0x401736: cdsl_dyn_array_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->01.18% (11,040B) 0x40146C: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| | ->01.18% (11,040B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| |   
+| ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->00.00% (24B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 68    278,175,771          937,768          724,428       213,340            0
+ 69    281,077,413          935,032          723,060       211,972            0
+ 70    283,965,736          932,256          721,680       210,576            0
+ 71    286,857,484          927,744          719,424       208,320            0
+ 72    289,746,436          932,648          727,020       205,628            0
+ 73    290,624,385          941,624          734,368       207,256            0
+77.99% (734,368B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->46.91% (441,728B) 0x401873: cdsl_dyn_array_enqueue (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->46.90% (441,664B) 0x401521: insert_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| | ->46.90% (441,664B) 0x40123B: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| |   
+| ->00.01% (64B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->17.20% (161,952B) 0x401350: get_next_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->17.20% (161,952B) 0x40120D: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+|   
+->09.92% (93,456B) 0x401707: cdsl_dyn_array_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->09.92% (93,368B) 0x40146C: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| | ->09.92% (93,368B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| |   
+| ->00.01% (88B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->02.70% (25,464B) 0x401433: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->02.70% (25,464B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+|   
+->01.25% (11,744B) 0x401736: cdsl_dyn_array_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->01.25% (11,744B) 0x40146C: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| | ->01.25% (11,744B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| |   
+| ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->00.00% (24B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 74    290,979,892          953,264          743,764       209,500            0
+78.02% (743,764B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->47.00% (448,000B) 0x401873: cdsl_dyn_array_enqueue (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->46.99% (447,936B) 0x401521: insert_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| | ->46.99% (447,936B) 0x40123B: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| |   
+| ->00.01% (64B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->17.17% (163,668B) 0x401350: get_next_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->17.17% (163,668B) 0x40120D: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+|   
+->09.91% (94,512B) 0x401707: cdsl_dyn_array_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->09.91% (94,424B) 0x40146C: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| | ->09.91% (94,424B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| |   
+| ->00.01% (88B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->02.70% (25,752B) 0x401433: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->02.70% (25,752B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+|   
+->01.24% (11,808B) 0x401736: cdsl_dyn_array_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->01.24% (11,808B) 0x40146C: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| | ->01.24% (11,808B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| |   
+| ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->00.00% (24B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 75    291,702,281          962,952          751,244       211,708            0
+78.01% (751,244B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->46.88% (451,392B) 0x401873: cdsl_dyn_array_enqueue (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->46.87% (451,328B) 0x401521: insert_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| | ->46.87% (451,328B) 0x40123B: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| |   
+| ->00.01% (64B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->17.12% (164,844B) 0x401350: get_next_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->17.12% (164,844B) 0x40120D: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+|   
+->10.03% (96,624B) 0x401707: cdsl_dyn_array_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->10.03% (96,536B) 0x40146C: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| | ->10.03% (96,536B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| |   
+| ->00.01% (88B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->02.73% (26,328B) 0x401433: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->02.73% (26,328B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+|   
+->01.25% (12,032B) 0x401736: cdsl_dyn_array_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->01.25% (12,032B) 0x40146C: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| | ->01.25% (12,032B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| |   
+| ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->00.00% (24B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 76    292,564,401          972,712          760,604       212,108            0
+78.19% (760,604B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->47.05% (457,664B) 0x401873: cdsl_dyn_array_enqueue (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->47.04% (457,600B) 0x401521: insert_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| | ->47.04% (457,600B) 0x40123B: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| |   
+| ->00.01% (64B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->16.83% (163,692B) 0x401350: get_next_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->16.83% (163,692B) 0x40120D: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+|   
+->10.25% (99,704B) 0x401707: cdsl_dyn_array_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->10.24% (99,616B) 0x40146C: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| | ->10.24% (99,616B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| |   
+| ->00.01% (88B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->02.79% (27,168B) 0x401433: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->02.79% (27,168B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+|   
+->01.27% (12,352B) 0x401736: cdsl_dyn_array_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->01.27% (12,352B) 0x40146C: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| | ->01.27% (12,352B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| |   
+| ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->00.00% (24B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 77    292,945,154          983,056          769,220       213,836            0
+78.25% (769,220B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->47.01% (462,144B) 0x401873: cdsl_dyn_array_enqueue (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->47.00% (462,080B) 0x401521: insert_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| | ->47.00% (462,080B) 0x40123B: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| |   
+| ->00.01% (64B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->16.70% (164,196B) 0x401350: get_next_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->16.70% (164,196B) 0x40120D: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+|   
+->10.40% (102,256B) 0x401707: cdsl_dyn_array_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->10.39% (102,168B) 0x40146C: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| | ->10.39% (102,168B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| |   
+| ->00.01% (88B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->02.83% (27,864B) 0x401433: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->02.83% (27,864B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+|   
+->01.30% (12,736B) 0x401736: cdsl_dyn_array_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->01.30% (12,736B) 0x40146C: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| | ->01.30% (12,736B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| |   
+| ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->00.00% (24B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 78    293,389,994          993,016          777,928       215,088            0
+78.34% (777,928B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->46.87% (465,472B) 0x401873: cdsl_dyn_array_enqueue (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->46.87% (465,408B) 0x401521: insert_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| | ->46.87% (465,408B) 0x40123B: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| |   
+| ->00.01% (64B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->16.47% (163,560B) 0x401350: get_next_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->16.47% (163,560B) 0x40120D: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+|   
+->10.72% (106,480B) 0x401707: cdsl_dyn_array_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->10.71% (106,392B) 0x40146C: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| | ->10.71% (106,392B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| |   
+| ->00.01% (88B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->02.92% (29,016B) 0x401433: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->02.92% (29,016B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+|   
+->01.35% (13,376B) 0x401736: cdsl_dyn_array_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->01.35% (13,376B) 0x40146C: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| | ->01.35% (13,376B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| |   
+| ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->00.00% (24B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 79    293,641,640        1,003,216          786,448       216,768            0
+78.39% (786,448B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->46.73% (468,800B) 0x401873: cdsl_dyn_array_enqueue (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->46.72% (468,736B) 0x401521: insert_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| | ->46.72% (468,736B) 0x40123B: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| |   
+| ->00.01% (64B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->16.32% (163,680B) 0x401350: get_next_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->16.32% (163,680B) 0x40120D: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+|   
+->10.96% (109,912B) 0x401707: cdsl_dyn_array_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->10.95% (109,824B) 0x40146C: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| | ->10.95% (109,824B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| |   
+| ->00.01% (88B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->02.99% (29,952B) 0x401433: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->02.99% (29,952B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+|   
+->01.40% (14,080B) 0x401736: cdsl_dyn_array_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->01.40% (14,080B) 0x40146C: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| | ->01.40% (14,080B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| |   
+| ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->00.00% (24B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 80    293,971,691        1,013,328          795,040       218,288            0
+78.46% (795,040B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->46.69% (473,152B) 0x401873: cdsl_dyn_array_enqueue (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->46.69% (473,088B) 0x401521: insert_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| | ->46.69% (473,088B) 0x40123B: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| |   
+| ->00.01% (64B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->16.17% (163,824B) 0x401350: get_next_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->16.17% (163,824B) 0x40120D: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+|   
+->11.14% (112,904B) 0x401707: cdsl_dyn_array_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->11.13% (112,816B) 0x40146C: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| | ->11.13% (112,816B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| |   
+| ->00.01% (88B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->03.04% (30,768B) 0x401433: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->03.04% (30,768B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+|   
+->01.42% (14,368B) 0x401736: cdsl_dyn_array_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->01.42% (14,368B) 0x40146C: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| | ->01.42% (14,368B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| |   
+| ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->00.00% (24B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 81    294,185,379        1,023,536          803,360       220,176            0
+78.49% (803,360B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->46.50% (475,904B) 0x401873: cdsl_dyn_array_enqueue (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->46.49% (475,840B) 0x401521: insert_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| | ->46.49% (475,840B) 0x40123B: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| |   
+| ->00.01% (64B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->16.03% (164,064B) 0x401350: get_next_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->16.03% (164,064B) 0x40120D: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+|   
+->11.38% (116,512B) 0x401707: cdsl_dyn_array_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->11.37% (116,424B) 0x40146C: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| | ->11.37% (116,424B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| |   
+| ->00.01% (88B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->03.10% (31,752B) 0x401433: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->03.10% (31,752B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+|   
+->01.48% (15,104B) 0x401736: cdsl_dyn_array_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->01.48% (15,104B) 0x40146C: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| | ->01.48% (15,104B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| |   
+| ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->00.00% (24B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 82    294,443,243        1,033,880          812,100       221,780            0
+78.55% (812,100B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->46.33% (479,040B) 0x401873: cdsl_dyn_array_enqueue (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->46.33% (478,976B) 0x401521: insert_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| | ->46.33% (478,976B) 0x40123B: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| |   
+| ->00.01% (64B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->15.84% (163,812B) 0x401350: get_next_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->15.84% (163,812B) 0x40120D: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+|   
+->11.66% (120,560B) 0x401707: cdsl_dyn_array_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->11.65% (120,472B) 0x40146C: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| | ->11.65% (120,472B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| |   
+| ->00.01% (88B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->03.18% (32,856B) 0x401433: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->03.18% (32,856B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+|   
+->01.53% (15,808B) 0x401736: cdsl_dyn_array_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->01.53% (15,808B) 0x40146C: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| | ->01.53% (15,808B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| |   
+| ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->00.00% (24B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 83    295,108,867        1,047,232          822,872       224,360            0
+78.58% (822,872B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->46.39% (485,760B) 0x401873: cdsl_dyn_array_enqueue (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->46.38% (485,696B) 0x401521: insert_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| | ->46.38% (485,696B) 0x40123B: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| |   
+| ->00.01% (64B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->15.81% (165,576B) 0x401350: get_next_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->15.81% (165,576B) 0x40120D: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+|   
+->11.67% (122,232B) 0x401707: cdsl_dyn_array_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->11.66% (122,144B) 0x40146C: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| | ->11.66% (122,144B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| |   
+| ->00.01% (88B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->03.18% (33,312B) 0x401433: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->03.18% (33,312B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+|   
+->01.52% (15,968B) 0x401736: cdsl_dyn_array_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->01.52% (15,968B) 0x40146C: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| | ->01.52% (15,968B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| |   
+| ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->00.00% (24B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 84    295,384,244        1,059,488          831,052       228,436            0
+78.44% (831,052B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->46.24% (489,856B) 0x401873: cdsl_dyn_array_enqueue (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->46.23% (489,792B) 0x401521: insert_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| | ->46.23% (489,792B) 0x40123B: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| |   
+| ->00.01% (64B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->16.00% (169,548B) 0x401350: get_next_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->16.00% (169,548B) 0x40120D: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+|   
+->11.55% (122,320B) 0x401707: cdsl_dyn_array_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->11.54% (122,232B) 0x40146C: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| | ->11.54% (122,232B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| |   
+| ->00.01% (88B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->03.15% (33,336B) 0x401433: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->03.15% (33,336B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+|   
+->01.51% (15,968B) 0x401736: cdsl_dyn_array_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->01.51% (15,968B) 0x40146C: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| | ->01.51% (15,968B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| |   
+| ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->00.00% (24B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 85    298,273,038        1,061,208          833,696       227,512            0
+ 86    298,478,994        1,070,088          841,112       228,976            0
+78.60% (841,112B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->46.27% (495,168B) 0x401873: cdsl_dyn_array_enqueue (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->46.27% (495,104B) 0x401521: insert_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| | ->46.27% (495,104B) 0x40123B: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| |   
+| ->00.01% (64B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->15.72% (168,264B) 0x401350: get_next_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->15.72% (168,264B) 0x40120D: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+|   
+->11.82% (126,456B) 0x401707: cdsl_dyn_array_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->11.81% (126,368B) 0x40146C: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| | ->11.81% (126,368B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| |   
+| ->00.01% (88B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->03.22% (34,464B) 0x401433: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->03.22% (34,464B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+|   
+->01.56% (16,736B) 0x401736: cdsl_dyn_array_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->01.56% (16,736B) 0x40146C: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| | ->01.56% (16,736B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| |   
+| ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->00.00% (24B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 87    298,844,685        1,080,840          850,272       230,568            0
+78.67% (850,272B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->46.18% (499,136B) 0x401873: cdsl_dyn_array_enqueue (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->46.17% (499,072B) 0x401521: insert_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| | ->46.17% (499,072B) 0x40123B: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| |   
+| ->00.01% (64B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->15.56% (168,192B) 0x401350: get_next_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->15.56% (168,192B) 0x40120D: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+|   
+->12.03% (130,064B) 0x401707: cdsl_dyn_array_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->12.03% (129,976B) 0x40146C: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| | ->12.03% (129,976B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| |   
+| ->00.01% (88B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->03.28% (35,448B) 0x401433: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->03.28% (35,448B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+|   
+->01.61% (17,408B) 0x401736: cdsl_dyn_array_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->01.61% (17,408B) 0x40146C: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| | ->01.61% (17,408B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| |   
+| ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->00.00% (24B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 88    299,107,808        1,091,864          859,420       232,444            0
+78.71% (859,420B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->46.15% (503,936B) 0x401873: cdsl_dyn_array_enqueue (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->46.15% (503,872B) 0x401521: insert_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| | ->46.15% (503,872B) 0x40123B: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| |   
+| ->00.01% (64B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->15.46% (168,780B) 0x401350: get_next_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->15.46% (168,780B) 0x40120D: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+|   
+->12.16% (132,792B) 0x401707: cdsl_dyn_array_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->12.15% (132,704B) 0x40146C: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| | ->12.15% (132,704B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| |   
+| ->00.01% (88B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->03.31% (36,192B) 0x401433: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->03.31% (36,192B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+|   
+->01.62% (17,696B) 0x401736: cdsl_dyn_array_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->01.62% (17,696B) 0x40146C: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| | ->01.62% (17,696B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| |   
+| ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->00.00% (24B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 89    299,860,934        1,102,920          869,064       233,856            0
+78.80% (869,064B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->46.13% (508,736B) 0x401873: cdsl_dyn_array_enqueue (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->46.12% (508,672B) 0x401521: insert_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| | ->46.12% (508,672B) 0x40123B: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| |   
+| ->00.01% (64B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->15.28% (168,504B) 0x401350: get_next_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->15.28% (168,504B) 0x40120D: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+|   
+->12.38% (136,488B) 0x401707: cdsl_dyn_array_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->12.37% (136,400B) 0x40146C: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| | ->12.37% (136,400B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| |   
+| ->00.01% (88B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->03.37% (37,200B) 0x401433: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->03.37% (37,200B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+|   
+->01.64% (18,112B) 0x401736: cdsl_dyn_array_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->01.64% (18,112B) 0x40146C: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| | ->01.64% (18,112B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| |   
+| ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->00.00% (24B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 90    300,148,035        1,115,712          879,324       236,388            0
+78.81% (879,324B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->46.13% (514,624B) 0x401873: cdsl_dyn_array_enqueue (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->46.12% (514,560B) 0x401521: insert_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| | ->46.12% (514,560B) 0x40123B: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| |   
+| ->00.01% (64B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->15.24% (170,076B) 0x401350: get_next_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->15.24% (170,076B) 0x40120D: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+|   
+->12.41% (138,512B) 0x401707: cdsl_dyn_array_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->12.41% (138,424B) 0x40146C: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| | ->12.41% (138,424B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| |   
+| ->00.01% (88B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->03.38% (37,752B) 0x401433: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->03.38% (37,752B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+|   
+->01.64% (18,336B) 0x401736: cdsl_dyn_array_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->01.64% (18,336B) 0x40146C: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| | ->01.64% (18,336B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| |   
+| ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->00.00% (24B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 91    300,440,746        1,126,928          887,520       239,408            0
+78.76% (887,520B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->46.12% (519,744B) 0x401873: cdsl_dyn_array_enqueue (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->46.11% (519,680B) 0x401521: insert_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| | ->46.11% (519,680B) 0x40123B: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| |   
+| ->00.01% (64B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->15.36% (173,040B) 0x401350: get_next_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->15.36% (173,040B) 0x40120D: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+|   
+->12.30% (138,600B) 0x401707: cdsl_dyn_array_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->12.29% (138,512B) 0x40146C: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| | ->12.29% (138,512B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| |   
+| ->00.01% (88B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->03.35% (37,776B) 0x401433: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->03.35% (37,776B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+|   
+->01.63% (18,336B) 0x401736: cdsl_dyn_array_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| ->01.63% (18,336B) 0x40146C: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| | ->01.63% (18,336B) 0x401224: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+| |   
+| ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->00.00% (24B) in 1+ places, all below ms_print's threshold (01.00%)
+

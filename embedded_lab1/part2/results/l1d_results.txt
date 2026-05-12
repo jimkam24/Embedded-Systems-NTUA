@@ -1,0 +1,18 @@
+L1D size = 2kB
+system.cpu.numCycles                         60022867                       # Number of cpu cycles simulated (Cycle)
+
+L1D size = 4kB
+system.cpu.numCycles                         59925409                       # Number of cpu cycles simulated (Cycle)
+
+L1D size = 8kB
+system.cpu.numCycles                         59829295                       # Number of cpu cycles simulated (Cycle)
+
+L1D size = 16kB
+system.cpu.numCycles                         43002223                       # Number of cpu cycles simulated (Cycle)
+
+L1D size = 32kB
+system.cpu.numCycles                         42771449                       # Number of cpu cycles simulated (Cycle)
+
+L1D size = 64kB
+system.cpu.numCycles                         42922847                       # Number of cpu cycles simulated (Cycle)
+

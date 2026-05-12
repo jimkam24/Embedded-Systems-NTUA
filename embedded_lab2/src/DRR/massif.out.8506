@@ -1,0 +1,901 @@
+desc: (none)
+cmd: ./drr
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=843530
+mem_heap_B=23568
+mem_heap_extra_B=5232
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=1398134
+mem_heap_B=34740
+mem_heap_extra_B=8988
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=1811590
+mem_heap_B=60816
+mem_heap_extra_B=25344
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=2424472
+mem_heap_B=110880
+mem_heap_extra_B=65072
+mem_stacks_B=0
+heap_tree=detailed
+n5: 110880 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 49320 0x402B4D: cdsl_deque_list_lock_based_pthread_enqueue (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+  n1: 49032 0x401601: insert_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+   n0: 49032 0x40131B: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+  n0: 288 in 1 place, below massif's threshold (1.00%)
+ n1: 31752 0x4017E7: cdsl_deque_list_lock_based_pthread_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+  n1: 31752 0x4018F1: cdsl_dll_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+   n1: 31752 0x40154C: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+    n0: 31752 0x401304: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+ n1: 26136 0x401430: get_next_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+  n0: 26136 0x4012ED: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+ n1: 3528 0x401513: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+  n0: 3528 0x401304: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+ n0: 144 in 4 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=5
+#-----------
+time=3164990
+mem_heap_B=53604
+mem_heap_extra_B=22868
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=3763303
+mem_heap_B=98088
+mem_heap_extra_B=63608
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=4112179
+mem_heap_B=126864
+mem_heap_extra_B=86552
+mem_stacks_B=0
+heap_tree=detailed
+n5: 126864 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 49248 0x402B4D: cdsl_deque_list_lock_based_pthread_enqueue (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+  n1: 48960 0x401601: insert_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+   n0: 48960 0x40131B: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+  n0: 288 in 1 place, below massif's threshold (1.00%)
+ n1: 38832 0x401430: get_next_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+  n0: 38832 0x4012ED: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+ n1: 34776 0x4017E7: cdsl_deque_list_lock_based_pthread_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+  n1: 34776 0x4018F1: cdsl_dll_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+   n1: 34776 0x40154C: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+    n0: 34776 0x401304: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+ n1: 3864 0x401513: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+  n0: 3864 0x401304: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+ n0: 144 in 4 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=8
+#-----------
+time=4864543
+mem_heap_B=76056
+mem_heap_extra_B=45992
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=5539187
+mem_heap_B=80688
+mem_heap_extra_B=40440
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=10
+#-----------
+time=6230807
+mem_heap_B=100728
+mem_heap_extra_B=47720
+mem_stacks_B=0
+heap_tree=detailed
+n5: 100728 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 59832 0x4017E7: cdsl_deque_list_lock_based_pthread_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+  n1: 59832 0x4018F1: cdsl_dll_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+   n1: 59832 0x40154C: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+    n0: 59832 0x401304: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+ n1: 25872 0x401430: get_next_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+  n0: 25872 0x4012ED: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+ n2: 8232 0x402B4D: cdsl_deque_list_lock_based_pthread_enqueue (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+  n1: 7752 0x401601: insert_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+   n0: 7752 0x40131B: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+  n0: 480 in 1 place, below massif's threshold (1.00%)
+ n1: 6648 0x401513: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+  n0: 6648 0x401304: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+ n0: 144 in 4 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=11
+#-----------
+time=6796859
+mem_heap_B=114096
+mem_heap_extra_B=52096
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=12
+#-----------
+time=7425575
+mem_heap_B=129012
+mem_heap_extra_B=66468
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=13
+#-----------
+time=8144298
+mem_heap_B=123816
+mem_heap_extra_B=58568
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=14
+#-----------
+time=8663825
+mem_heap_B=143448
+mem_heap_extra_B=72984
+mem_stacks_B=0
+heap_tree=detailed
+n5: 143448 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 81000 0x4017E7: cdsl_deque_list_lock_based_pthread_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+  n1: 81000 0x4018F1: cdsl_dll_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+   n1: 81000 0x40154C: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+    n0: 81000 0x401304: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+ n1: 34368 0x401430: get_next_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+  n0: 34368 0x4012ED: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+ n2: 18936 0x402B4D: cdsl_deque_list_lock_based_pthread_enqueue (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+  n1: 18264 0x401601: insert_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+   n0: 18264 0x40131B: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+  n0: 672 in 1 place, below massif's threshold (1.00%)
+ n1: 9000 0x401513: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+  n0: 9000 0x401304: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+ n0: 144 in 4 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=15
+#-----------
+time=9127625
+mem_heap_B=154560
+mem_heap_extra_B=82952
+mem_stacks_B=0
+heap_tree=detailed
+n5: 154560 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 83376 0x4017E7: cdsl_deque_list_lock_based_pthread_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+  n1: 83376 0x4018F1: cdsl_dll_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+   n1: 83376 0x40154C: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+    n0: 83376 0x401304: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+ n1: 38736 0x401430: get_next_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+  n0: 38736 0x4012ED: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+ n2: 23016 0x402B4D: cdsl_deque_list_lock_based_pthread_enqueue (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+  n1: 22296 0x401601: insert_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+   n0: 22296 0x40131B: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+  n0: 720 in 1 place, below massif's threshold (1.00%)
+ n1: 9264 0x401513: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+  n0: 9264 0x401304: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+ n0: 168 in 4 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=16
+#-----------
+time=9751354
+mem_heap_B=143832
+mem_heap_extra_B=72352
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=17
+#-----------
+time=10495097
+mem_heap_B=166284
+mem_heap_extra_B=77236
+mem_stacks_B=0
+heap_tree=detailed
+n5: 166284 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 106056 0x4017E7: cdsl_deque_list_lock_based_pthread_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+  n1: 106056 0x4018F1: cdsl_dll_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+   n1: 106056 0x40154C: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+    n0: 106056 0x401304: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+ n1: 35580 0x401430: get_next_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+  n0: 35580 0x4012ED: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+ n2: 12696 0x402B4D: cdsl_deque_list_lock_based_pthread_enqueue (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+  n1: 11904 0x401601: insert_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+   n0: 11904 0x40131B: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+  n0: 792 in 1 place, below massif's threshold (1.00%)
+ n1: 11784 0x401513: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+  n0: 11784 0x401304: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+ n0: 168 in 4 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=18
+#-----------
+time=11281309
+mem_heap_B=171408
+mem_heap_extra_B=80968
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=19
+#-----------
+time=11838799
+mem_heap_B=214032
+mem_heap_extra_B=114808
+mem_stacks_B=0
+heap_tree=detailed
+n5: 214032 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 110376 0x4017E7: cdsl_deque_list_lock_based_pthread_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+  n1: 110376 0x4018F1: cdsl_dll_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+   n1: 110376 0x40154C: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+    n0: 110376 0x401304: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+ n1: 52704 0x401430: get_next_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+  n0: 52704 0x4012ED: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+ n2: 38544 0x402B4D: cdsl_deque_list_lock_based_pthread_enqueue (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+  n1: 37752 0x401601: insert_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+   n0: 37752 0x40131B: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+  n0: 792 in 1 place, below massif's threshold (1.00%)
+ n1: 12264 0x401513: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+  n0: 12264 0x401304: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+ n0: 144 in 4 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=20
+#-----------
+time=12601662
+mem_heap_B=206136
+mem_heap_extra_B=110344
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=21
+#-----------
+time=13286985
+mem_heap_B=213648
+mem_heap_extra_B=119392
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=22
+#-----------
+time=13629893
+mem_heap_B=213984
+mem_heap_extra_B=119112
+mem_stacks_B=0
+heap_tree=detailed
+n5: 213984 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 113184 0x4017E7: cdsl_deque_list_lock_based_pthread_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+  n1: 113184 0x4018F1: cdsl_dll_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+   n1: 113184 0x40154C: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+    n0: 113184 0x401304: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+ n1: 59136 0x401430: get_next_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+  n0: 59136 0x4012ED: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+ n2: 28944 0x402B4D: cdsl_deque_list_lock_based_pthread_enqueue (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+  n1: 28128 0x401601: insert_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+   n0: 28128 0x40131B: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+  n0: 816 in 1 place, below massif's threshold (1.00%)
+ n1: 12576 0x401513: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+  n0: 12576 0x401304: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+ n0: 144 in 4 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=23
+#-----------
+time=14486800
+mem_heap_B=199188
+mem_heap_extra_B=106388
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=24
+#-----------
+time=15172099
+mem_heap_B=206112
+mem_heap_extra_B=112160
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=25
+#-----------
+time=15857568
+mem_heap_B=223992
+mem_heap_extra_B=126672
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=26
+#-----------
+time=16714574
+mem_heap_B=229704
+mem_heap_extra_B=124080
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=27
+#-----------
+time=17057577
+mem_heap_B=237696
+mem_heap_extra_B=127664
+mem_stacks_B=0
+heap_tree=detailed
+n5: 237696 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 141048 0x4017E7: cdsl_deque_list_lock_based_pthread_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+  n1: 141048 0x4018F1: cdsl_dll_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+   n1: 141048 0x40154C: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+    n0: 141048 0x401304: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+ n1: 62568 0x401430: get_next_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+  n0: 62568 0x4012ED: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+ n2: 18264 0x402B4D: cdsl_deque_list_lock_based_pthread_enqueue (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+  n1: 17232 0x401601: insert_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+   n0: 17232 0x40131B: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+  n0: 1032 in 1 place, below massif's threshold (1.00%)
+ n1: 15672 0x401513: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+  n0: 15672 0x401304: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+ n0: 144 in 4 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=28
+#-----------
+time=17839021
+mem_heap_B=254256
+mem_heap_extra_B=142008
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=29
+#-----------
+time=18484029
+mem_heap_B=286248
+mem_heap_extra_B=172000
+mem_stacks_B=0
+heap_tree=detailed
+n5: 286248 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 141696 0x4017E7: cdsl_deque_list_lock_based_pthread_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+  n1: 141696 0x4018F1: cdsl_dll_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+   n1: 141696 0x40154C: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+    n0: 141696 0x401304: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+ n1: 83688 0x401430: get_next_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+  n0: 83688 0x4012ED: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+ n2: 44976 0x402B4D: cdsl_deque_list_lock_based_pthread_enqueue (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+  n1: 43944 0x401601: insert_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+   n0: 43944 0x40131B: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+  n0: 1032 in 1 place, below massif's threshold (1.00%)
+ n1: 15744 0x401513: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+  n0: 15744 0x401304: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+ n0: 144 in 4 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=30
+#-----------
+time=18998439
+mem_heap_B=249720
+mem_heap_extra_B=144984
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=31
+#-----------
+time=19684097
+mem_heap_B=260088
+mem_heap_extra_B=152312
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=32
+#-----------
+time=20198326
+mem_heap_B=279828
+mem_heap_extra_B=159540
+mem_stacks_B=0
+heap_tree=detailed
+n5: 279828 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 161136 0x4017E7: cdsl_deque_list_lock_based_pthread_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+  n1: 161136 0x4018F1: cdsl_dll_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+   n1: 161136 0x40154C: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+    n0: 161136 0x401304: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+ n1: 79788 0x401430: get_next_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+  n0: 79788 0x4012ED: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+ n2: 20856 0x402B4D: cdsl_deque_list_lock_based_pthread_enqueue (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+  n1: 19704 0x401601: insert_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+   n0: 19704 0x40131B: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+  n0: 1152 in 1 place, below massif's threshold (1.00%)
+ n1: 17904 0x401513: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+  n0: 17904 0x401304: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+ n0: 144 in 4 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=33
+#-----------
+time=20712317
+mem_heap_B=290748
+mem_heap_extra_B=157892
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=34
+#-----------
+time=21453262
+mem_heap_B=306456
+mem_heap_extra_B=166824
+mem_stacks_B=0
+heap_tree=detailed
+n5: 306456 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 179928 0x4017E7: cdsl_deque_list_lock_based_pthread_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+  n1: 179928 0x4018F1: cdsl_dll_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+   n1: 179928 0x40154C: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+    n0: 179928 0x401304: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+ n1: 82272 0x401430: get_next_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+  n0: 82272 0x4012ED: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+ n2: 24120 0x402B4D: cdsl_deque_list_lock_based_pthread_enqueue (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+  n1: 22824 0x401601: insert_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+   n0: 22824 0x40131B: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+  n0: 1296 in 1 place, below massif's threshold (1.00%)
+ n1: 19992 0x401513: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+  n0: 19992 0x401304: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+ n0: 144 in 4 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=35
+#-----------
+time=22023646
+mem_heap_B=317568
+mem_heap_extra_B=166000
+mem_stacks_B=0
+heap_tree=detailed
+n5: 317568 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 192456 0x4017E7: cdsl_deque_list_lock_based_pthread_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+  n1: 192456 0x4018F1: cdsl_dll_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+   n1: 192456 0x40154C: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+    n0: 192456 0x401304: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+ n1: 81528 0x401430: get_next_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+  n0: 81528 0x4012ED: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+ n2: 22032 0x402B4D: cdsl_deque_list_lock_based_pthread_enqueue (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+  n1: 20568 0x401601: insert_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+   n0: 20568 0x40131B: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+  n0: 1464 in 1 place, below massif's threshold (1.00%)
+ n1: 21384 0x401513: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+  n0: 21384 0x401304: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+ n0: 168 in 4 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=36
+#-----------
+time=22822950
+mem_heap_B=381516
+mem_heap_extra_B=214436
+mem_stacks_B=0
+heap_tree=detailed
+n5: 381516 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 195048 0x4017E7: cdsl_deque_list_lock_based_pthread_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+  n1: 195048 0x4018F1: cdsl_dll_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+   n1: 195048 0x40154C: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+    n0: 195048 0x401304: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+ n1: 102204 0x401430: get_next_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+  n0: 102204 0x4012ED: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+ n2: 62448 0x402B4D: cdsl_deque_list_lock_based_pthread_enqueue (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+  n1: 61008 0x401601: insert_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+   n0: 61008 0x40131B: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+  n0: 1440 in 1 place, below massif's threshold (1.00%)
+ n1: 21672 0x401513: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+  n0: 21672 0x401304: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+ n0: 144 in 4 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=37
+#-----------
+time=23440604
+mem_heap_B=429036
+mem_heap_extra_B=252220
+mem_stacks_B=0
+heap_tree=detailed
+n5: 429036 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 195048 0x4017E7: cdsl_deque_list_lock_based_pthread_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+  n1: 195048 0x4018F1: cdsl_dll_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+   n1: 195048 0x40154C: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+    n0: 195048 0x401304: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+ n1: 118644 0x401430: get_next_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+  n0: 118644 0x4012ED: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+ n2: 93528 0x402B4D: cdsl_deque_list_lock_based_pthread_enqueue (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+  n1: 92088 0x401601: insert_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+   n0: 92088 0x40131B: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+  n0: 1440 in 1 place, below massif's threshold (1.00%)
+ n1: 21672 0x401513: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+  n0: 21672 0x401304: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+ n0: 144 in 4 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=38
+#-----------
+time=24189097
+mem_heap_B=483500
+mem_heap_extra_B=295324
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=39
+#-----------
+time=25120875
+mem_heap_B=540848
+mem_heap_extra_B=343128
+mem_stacks_B=0
+heap_tree=detailed
+n5: 540848 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 195480 0x4017E7: cdsl_deque_list_lock_based_pthread_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+  n1: 195480 0x4018F1: cdsl_dll_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+   n1: 195480 0x40154C: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+    n0: 195480 0x401304: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+ n2: 164544 0x402B4D: cdsl_deque_list_lock_based_pthread_enqueue (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+  n1: 163104 0x401601: insert_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+   n0: 163104 0x40131B: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+  n0: 1440 in 1 place, below massif's threshold (1.00%)
+ n1: 158928 0x401430: get_next_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+  n0: 158928 0x4012ED: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+ n1: 21720 0x401513: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+  n0: 21720 0x401304: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+ n0: 176 in 5 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=40
+#-----------
+time=25624224
+mem_heap_B=498884
+mem_heap_extra_B=313636
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=41
+#-----------
+time=26127327
+mem_heap_B=457376
+mem_heap_extra_B=283968
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=42
+#-----------
+time=26881967
+mem_heap_B=395456
+mem_heap_extra_B=239096
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=43
+#-----------
+time=27703192
+mem_heap_B=379508
+mem_heap_extra_B=222948
+mem_stacks_B=0
+heap_tree=detailed
+n5: 379508 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 200448 0x4017E7: cdsl_deque_list_lock_based_pthread_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+  n1: 200448 0x4018F1: cdsl_dll_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+   n1: 200448 0x40154C: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+    n0: 200448 0x401304: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+ n1: 134316 0x401430: get_next_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+  n0: 134316 0x4012ED: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+ n1: 22272 0x401513: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+  n0: 22272 0x401304: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+ n2: 22272 0x402B4D: cdsl_deque_list_lock_based_pthread_enqueue (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+  n1: 20808 0x401601: insert_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+   n0: 20808 0x40131B: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+  n0: 1464 in 1 place, below massif's threshold (1.00%)
+ n0: 200 in 5 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=44
+#-----------
+time=28206242
+mem_heap_B=410372
+mem_heap_extra_B=258140
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=45
+#-----------
+time=28709439
+mem_heap_B=442328
+mem_heap_extra_B=298864
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=46
+#-----------
+time=29464408
+mem_heap_B=395468
+mem_heap_extra_B=251004
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=47
+#-----------
+time=30238659
+mem_heap_B=403592
+mem_heap_extra_B=260440
+mem_stacks_B=0
+heap_tree=detailed
+n5: 403592 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 207576 0x4017E7: cdsl_deque_list_lock_based_pthread_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+  n1: 207576 0x4018F1: cdsl_dll_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+   n1: 207576 0x40154C: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+    n0: 207576 0x401304: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+ n1: 149712 0x401430: get_next_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+  n0: 149712 0x4012ED: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+ n1: 23064 0x401513: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+  n0: 23064 0x401304: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+ n2: 23064 0x402B4D: cdsl_deque_list_lock_based_pthread_enqueue (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+  n1: 21576 0x401601: insert_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+   n0: 21576 0x40131B: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+  n0: 1488 in 1 place, below massif's threshold (1.00%)
+ n0: 176 in 5 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=48
+#-----------
+time=30993491
+mem_heap_B=424220
+mem_heap_extra_B=280940
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=49
+#-----------
+time=31496721
+mem_heap_B=465824
+mem_heap_extra_B=327944
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=50
+#-----------
+time=31839753
+mem_heap_B=449348
+mem_heap_extra_B=310420
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=51
+#-----------
+time=32196558
+mem_heap_B=423020
+mem_heap_extra_B=286884
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=52
+#-----------
+time=32539539
+mem_heap_B=437012
+mem_heap_extra_B=290044
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=53
+#-----------
+time=32882582
+mem_heap_B=441296
+mem_heap_extra_B=292992
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=54
+#-----------
+time=33225499
+mem_heap_B=445340
+mem_heap_extra_B=294636
+mem_stacks_B=0
+heap_tree=detailed
+n5: 445340 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 231120 0x4017E7: cdsl_deque_list_lock_based_pthread_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+  n1: 231120 0x4018F1: cdsl_dll_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+   n1: 231120 0x40154C: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+    n0: 231120 0x401304: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+ n1: 161988 0x401430: get_next_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+  n0: 161988 0x4012ED: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+ n2: 26376 0x402B4D: cdsl_deque_list_lock_based_pthread_enqueue (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+  n1: 24768 0x401601: insert_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+   n0: 24768 0x40131B: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+  n0: 1608 in 1 place, below massif's threshold (1.00%)
+ n1: 25680 0x401513: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+  n0: 25680 0x401304: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+ n0: 176 in 5 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=55
+#-----------
+time=33568471
+mem_heap_B=449912
+mem_heap_extra_B=296120
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=56
+#-----------
+time=33911541
+mem_heap_B=455120
+mem_heap_extra_B=299208
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=57
+#-----------
+time=34254490
+mem_heap_B=464432
+mem_heap_extra_B=301288
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=58
+#-----------
+time=34597458
+mem_heap_B=472796
+mem_heap_extra_B=302820
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=59
+#-----------
+time=34940615
+mem_heap_B=488180
+mem_heap_extra_B=305388
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=60
+#-----------
+time=35283528
+mem_heap_B=501404
+mem_heap_extra_B=311108
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=61
+#-----------
+time=35626447
+mem_heap_B=513968
+mem_heap_extra_B=311328
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=62
+#-----------
+time=35969427
+mem_heap_B=532364
+mem_heap_extra_B=320956
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=63
+#-----------
+time=36312475
+mem_heap_B=543260
+mem_heap_extra_B=329172
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=64
+#-----------
+time=36477375
+mem_heap_B=557012
+mem_heap_extra_B=339756
+mem_stacks_B=0
+heap_tree=detailed
+n5: 557012 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 300024 0x4017E7: cdsl_deque_list_lock_based_pthread_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+  n1: 300024 0x4018F1: cdsl_dll_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+   n1: 300024 0x40154C: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+    n0: 300024 0x401304: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+ n1: 172740 0x401430: get_next_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+  n0: 172740 0x4012ED: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+ n2: 50712 0x402B4D: cdsl_deque_list_lock_based_pthread_enqueue (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+  n1: 48672 0x401601: insert_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+   n0: 48672 0x40131B: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+  n0: 2040 in 1 place, below massif's threshold (1.00%)
+ n1: 33336 0x401513: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+  n0: 33336 0x401304: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+ n0: 200 in 5 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=65
+#-----------
+time=36820456
+mem_heap_B=537668
+mem_heap_extra_B=323604
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=66
+#-----------
+time=37163581
+mem_heap_B=549956
+mem_heap_extra_B=326004
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=67
+#-----------
+time=37506568
+mem_heap_B=560984
+mem_heap_extra_B=328480
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=68
+#-----------
+time=37735793
+mem_heap_B=573356
+mem_heap_extra_B=335252
+mem_stacks_B=0
+heap_tree=detailed
+n5: 573356 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 325728 0x4017E7: cdsl_deque_list_lock_based_pthread_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+  n1: 325728 0x4018F1: cdsl_dll_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+   n1: 325728 0x40154C: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+    n0: 325728 0x401304: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+ n1: 170364 0x401430: get_next_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+  n0: 170364 0x4012ED: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+ n2: 40872 0x402B4D: cdsl_deque_list_lock_based_pthread_enqueue (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+  n1: 38016 0x401601: insert_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+   n0: 38016 0x40131B: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+  n0: 2856 in 1 place, below massif's threshold (1.00%)
+ n1: 36192 0x401513: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+  n0: 36192 0x401304: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+ n0: 200 in 5 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=69
+#-----------
+time=38079042
+mem_heap_B=575492
+mem_heap_extra_B=330756
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=70
+#-----------
+time=38396263
+mem_heap_B=589172
+mem_heap_extra_B=336804
+mem_stacks_B=0
+heap_tree=detailed
+n5: 589172 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 339768 0x4017E7: cdsl_deque_list_lock_based_pthread_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+  n1: 339768 0x4018F1: cdsl_dll_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+   n1: 339768 0x40154C: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+    n0: 339768 0x401304: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+ n1: 170268 0x401430: get_next_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+  n0: 170268 0x4012ED: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+ n2: 41184 0x402B4D: cdsl_deque_list_lock_based_pthread_enqueue (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+  n1: 38232 0x401601: insert_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+   n0: 38232 0x40131B: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+  n0: 2952 in 1 place, below massif's threshold (1.00%)
+ n1: 37752 0x401513: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+  n0: 37752 0x401304: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+ n0: 200 in 5 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=71
+#-----------
+time=38598293
+mem_heap_B=603056
+mem_heap_extra_B=347768
+mem_stacks_B=0
+heap_tree=peak
+n5: 603056 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 339984 0x4017E7: cdsl_deque_list_lock_based_pthread_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+  n1: 339984 0x4018F1: cdsl_dll_init (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+   n1: 339984 0x40154C: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+    n0: 339984 0x401304: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+ n1: 175008 0x401430: get_next_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+  n0: 175008 0x4012ED: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+ n2: 50112 0x402B4D: cdsl_deque_list_lock_based_pthread_enqueue (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+  n1: 47184 0x401601: insert_packet (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+   n0: 47184 0x40131B: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+  n0: 2928 in 1 place, below massif's threshold (1.00%)
+ n1: 37776 0x401513: find_node (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+  n0: 37776 0x401304: main (in /home/jimkam/Desktop/embsys_lab2/src/DRR/drr)
+ n0: 176 in 5 places, all below massif's threshold (1.00%)

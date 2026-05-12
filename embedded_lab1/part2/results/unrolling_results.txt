@@ -1,0 +1,15 @@
+unrolling factor = 2
+system.cpu.numCycles                         59815325                       # Number of cpu cycles simulated (Cycle)
+
+unrolling factor = 4
+system.cpu.numCycles                         59622462                       # Number of cpu cycles simulated (Cycle)
+
+unrolling factor = 8
+system.cpu.numCycles                         59465548                       # Number of cpu cycles simulated (Cycle)
+
+unrolling factor = 16
+system.cpu.numCycles                         59377532                       # Number of cpu cycles simulated (Cycle)
+
+unrolling factor = 32
+system.cpu.numCycles                         59241019                       # Number of cpu cycles simulated (Cycle)
+
